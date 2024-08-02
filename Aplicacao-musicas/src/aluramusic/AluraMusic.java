@@ -9,7 +9,6 @@ import aluramusic.musicas.Musicas;
 /**
  *
  * @author alan toledo
- * date 1/08/24
  */
 public class AluraMusic {
 
