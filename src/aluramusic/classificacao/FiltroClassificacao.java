@@ -12,7 +12,19 @@ public class FiltroClassificacao {
     
     public void filtroRecomendacao(Classificavel classificavel){
         int item = classificavel.getClassificacao();
-        System.out.println("item" + item);
+        switch (item) {
+            case 3:
+                System.out.println("Altamente recomendado!");
+                break;
+            case 2:
+                System.out.println("Recomendação regular.");
+                break;
+            case 1:
+                System.out.println("Não recomendado.");
+                break;
+            default:
+                System.out.println("A nota é invalida.");;
+        }
     
     
     }

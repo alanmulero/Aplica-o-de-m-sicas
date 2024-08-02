@@ -18,6 +18,11 @@ public abstract class CadastroGeral {
         totalGeralReproducoes ++;
     }
 
+    public static int getTotalGeralReproducoes() {
+        return totalGeralReproducoes;
+    }
+    
+
     public String getNomeAutorArtista() {
         return nomeAutorArtista;
     }
