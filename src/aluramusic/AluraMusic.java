@@ -7,11 +7,15 @@ package aluramusic;
 import aluramusic.classificacao.FiltroClassificacao;
 import aluramusic.musicas.Musicas;
 import aluramusic.podcasts.Podcast;
+import java.util.ArrayList;
 import java.util.Scanner;
+
 
 /**
  *
  * @author alan toledo date 1/08/24
+ * 3/8/24 Iniciando o uso de listas. 
+ * Biblioteca Java Collections,
  */
 public class AluraMusic {
 
@@ -33,16 +37,34 @@ public class AluraMusic {
 
         //Instanciando filtro de recomendações.
         var filtro = new FiltroClassificacao();
-        filtro.filtroRecomendacao(m1);
-        filtro.filtroRecomendacao(m1);
-        filtro.filtroRecomendacao(m1);
+//        filtro.filtroRecomendacao(m1);
+//        filtro.filtroRecomendacao(m1);
+//        filtro.filtroRecomendacao(m1);
 
         // Instanciando podcast
-        var p1 = new Podcast("Papo de TI", 2024, "Java");
-        var p2 = new Podcast("Papo de TI", 2024, "Spring Boot");
-        filtro.filtroRecomendacao(p1);
-        filtro.filtroRecomendacao(p2);
-
+        //var p1 = new Podcast("Papo de TI", 2024, "Java");
+        //var p2 = new Podcast("Papo de TI", 2024, "Spring Boot");
+        //var podcast4 = new Podcast("Alura", 2022, "Java Swing");
+        //filtro.filtroRecomendacao(p1);
+        
+        // Criando o objeto lista de musucas.
+        ArrayList<Musicas> listaDeMusicas = new ArrayList<>();
+        //Adicionanso musicas na lista.
+        listaDeMusicas.add(m3);
+        listaDeMusicas.add(m1);
+        listaDeMusicas.add(m2);
+        // Conferindo tamanho da lista.
+        System.out.println(listaDeMusicas.size());
+        // Primeiro elemento da lisat.
+        System.out.println("Primeiro elemento: " + listaDeMusicas.get(0).getNomeAutorArtista());
+        // Chamando a lista todo e invocando o método toString() em músicas.
+        System.out.println(listaDeMusicas);
+                
+                
+                
+                
+                
+                
     }
 
 }

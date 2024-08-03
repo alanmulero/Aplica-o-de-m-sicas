@@ -41,6 +41,14 @@ public class Musicas extends CadastroGeral implements Classificavel{
         return num;
     }
     
+    // Reescrita de método.
+
+    @Override
+    public String toString() {
+        return "Musicas {" + "Trazendo sómente o genero musical: " + generoMusical + '}';
+    }
+    
+    
     
 
 }
