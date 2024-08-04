@@ -8,7 +8,7 @@ package aluramusic;
  *
  * @author alan
  */
-public abstract class CadastroGeral {
+public abstract class CadastroGeral implements Comparable<CadastroGeral>{
     private static int totalGeralReproducoes;
     private String nomeAutorArtista;
     private int anoLancamento;
@@ -34,4 +34,11 @@ public abstract class CadastroGeral {
     public void totalGeral(){
         System.out.println("Toral geral de reproduções do aplicativo: " + this.totalGeralReproducoes);
 }
+
+    @Override
+    public int compareTo(CadastroGeral o) {
+        return this.nomeAutorArtista.compareTo(o.nomeAutorArtista);
+    }
+    
+    
 }

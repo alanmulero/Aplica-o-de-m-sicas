@@ -45,7 +45,7 @@ public class Musicas extends CadastroGeral implements Classificavel{
 
     @Override
     public String toString() {
-        return "Musicas {" + "Trazendo sómente o genero musical: " + generoMusical + '}';
+        return super.getNomeAutorArtista();
     }
     
     

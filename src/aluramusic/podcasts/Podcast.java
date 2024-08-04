@@ -43,7 +43,12 @@ Scanner leitura = new Scanner(System.in);
         return getNota();
     }
 
- 
+    @Override
+    public String toString() {
+        return super.getNomeAutorArtista();
+    }
+
+    
     
     
     

@@ -37,15 +37,15 @@ public class AluraMusic {
 
         //Instanciando filtro de recomendações.
         var filtro = new FiltroClassificacao();
-//        filtro.filtroRecomendacao(m1);
-//        filtro.filtroRecomendacao(m1);
-//        filtro.filtroRecomendacao(m1);
+        filtro.filtroRecomendacao(m1);
+        filtro.filtroRecomendacao(m1);
+        filtro.filtroRecomendacao(m1);
 
-        // Instanciando podcast
-        //var p1 = new Podcast("Papo de TI", 2024, "Java");
-        //var p2 = new Podcast("Papo de TI", 2024, "Spring Boot");
-        //var podcast4 = new Podcast("Alura", 2022, "Java Swing");
-        //filtro.filtroRecomendacao(p1);
+         //Instanciando podcast
+        var p1 = new Podcast("Papo de TI", 2024, "Java");
+        var p2 = new Podcast("Papo de TI", 2024, "Spring Boot");
+        var podcast4 = new Podcast("Alura", 2022, "Java Swing");
+        filtro.filtroRecomendacao(p1);
         
         // Criando o objeto lista de musucas.
         ArrayList<Musicas> listaDeMusicas = new ArrayList<>();
@@ -53,6 +53,8 @@ public class AluraMusic {
         listaDeMusicas.add(m3);
         listaDeMusicas.add(m1);
         listaDeMusicas.add(m2);
+        //listaDeMusicas.add(p1); Em uma lista do tipo musica não cabe podcast.
+        
         // Conferindo tamanho da lista.
         System.out.println(listaDeMusicas.size());
         // Primeiro elemento da lisat.
