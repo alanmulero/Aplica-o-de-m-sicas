@@ -23,8 +23,7 @@ Scanner leitura = new Scanner(System.in);
         super(nomeAutorArtista, anoLancamento);
         this.temaPodcast = tema;
         
-        System.out.println("Digite uma nota para o Podcast de 1 até 3:  ");
-        this.nota = leitura.nextInt();
+       
         
     }
 
@@ -33,14 +32,16 @@ Scanner leitura = new Scanner(System.in);
     }
 
     public int getNota() {
-        return nota;
+        return this.nota;
     }
     
     
 
     @Override
     public int getClassificacao() {
-        return getNota();
+        System.out.println("Digite uma nota de 1 até 3 para o podcast: ");
+        this.nota = leitura.nextInt();
+        return this.nota;
     }
 
     @Override

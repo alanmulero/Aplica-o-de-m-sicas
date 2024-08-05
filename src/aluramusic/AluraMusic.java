@@ -38,8 +38,8 @@ public class AluraMusic {
         //Instanciando filtro de recomendações.
         var filtro = new FiltroClassificacao();
         filtro.filtroRecomendacao(m1);
-        filtro.filtroRecomendacao(m1);
-        filtro.filtroRecomendacao(m1);
+        filtro.filtroRecomendacao(m2);
+        filtro.filtroRecomendacao(m3);
 
          //Instanciando podcast
         var p1 = new Podcast("Papo de TI", 2024, "Java");
@@ -56,16 +56,12 @@ public class AluraMusic {
         //listaDeMusicas.add(p1); Em uma lista do tipo musica não cabe podcast.
         
         // Conferindo tamanho da lista.
-        System.out.println(listaDeMusicas.size());
+        System.out.println("Quantidade adicionada na lista: " + listaDeMusicas.size());
         // Primeiro elemento da lisat.
         System.out.println("Primeiro elemento: " + listaDeMusicas.get(0).getNomeAutorArtista());
         // Chamando a lista todo e invocando o método toString() em músicas.
         System.out.println(listaDeMusicas);
-                
-                
-                
-                
-                
+                         
                 
     }
 
